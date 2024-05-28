@@ -28,3 +28,9 @@ link2.addEventListener("click", () => {
 link3.addEventListener("click", () =>{
     scrollToElement(".column")
 })
+
+const btnCurriculo = document.querySelector(".curriculo")
+
+btnCurriculo.addEventListener("click", () =>{
+    btnCurriculo.innerHTML = "EM CONSTRUÇÃO"
+})
