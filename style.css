@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #1a0502;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: white;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #d8711d;
+    transition: all .3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.curriculo{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 550;
+    color: #d8711d;
+    background-color: #1a0502;
+    border: 1px solid #d8711d;
+    border-radius: 6px;
+    transition: all .3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.curriculo:hover{
+    transform: scale(1.1);
+}
+
+.curriculo a:visited{
+    color: #d8711d;
+
+}
+
+.github{
+    background-color: #d8711d;
+    border-radius:100%;
+    
+}
+
+.github img{
+    
+    transition: transform .3s ease;
+    cursor: pointer;
+}
+
+.github img:hover{
+    transform: scale(1.1);
+    
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #922918;
+    z-index: -100;
+    
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ff9900af;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #ffae00fd;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #ffae00fd;
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+header .image{
+    position: relative;
+}
+
+header .image img{
+    max-width: 600px;
+    margin: auto;
+}
+
+section .header{
+    margin-bottom: 1rem;
+    color: #ffae00fd;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+
+
+.technologies{
+    margin-top: 4rem;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.ri-html5-fill{
+    max-width: 100%;
+    height: auto;
+    font-size: 100px;
+}
+.ri-css3-fill{
+    max-width: 100%;
+    height: auto;
+    font-size: 100px;
+}
+
+.ri-javascript-fill{
+    max-width: 100%;
+    height: auto;
+    font-size: 100px;
+}
+
+.technologies .card{
+    background-color: #ffae00fd;
+    padding: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.technologies .card:hover{
+    background-color: #755308fd;
+    border-color: #ffae00fd;
+}
+
+.technologies .card h4{
+    text-align: center;
+    
+}
+
+.sub-header{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: #ffae00fd;
+}
+
+.projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 20px;
+    
+}
+
+.projects h4{
+    padding: 6px;
+    text-align: center;
+    color: #ffae00fd;
+    
+    
+}
+
+.projects .card{
+    padding-bottom: 10px;
+    background-color: #331e01fd;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+
+.project .card:hover{
+    background-color: #755308fd;
+}
+
+.projects .card .content img{
+    justify-content: center;
+    margin: auto;
+    max-width: 100%;
+    border-radius: 30px;
+    transition: transform .5s ease;
+}
+
+.projects .card .content img:hover{
+    transform: scale(1.04);
+}
+
+footer{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+    
+}
+
+
+footer .column .logo{
+    max-width: 100px;
+    margin-bottom: 2rem;
+}
+
+footer .column p{
+    color: #fff;
+    margin-bottom: 2rem;
+    transition: all .3s ease;
+}
+
+footer .column .socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer .column .socials a{
+    color: #c4890cfd;
+    border: 1px solid #c4890cfd;
+    padding: 5px 10px;
+    font-size: 1.25rem;
+    border-radius: 100%;
+    transition: all .3s ease;
+}
+
+footer .column .socials a:hover{
+    color: black;
+    background-color: #ffae00fd;
+    border-color: #ffae00fd;
+
+}
+
+footer .column h4{
+    color: #ccc;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+#whatsapp:hover{
+    color: #ffae00fd;
+}
+
+footer .column a{
+    display: block;
+    color: #ccc;
+    margin-bottom: 1rem;
+    transition: all .3s ease;
+}
+
+footer .column a:hover{
+    color: #ffae00fd;
+    
+}
+
+.copyright{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    color: #ffae00fd;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+@media (width < 900px){
+    .nav-links{
+        display: none;
+    }
+    header{
+        grid-template-columns: repeat(1,1fr);
+    }
+    header .image{
+        grid-area: 1/1/2/2;        
+    }
+    footer{
+        grid-template-columns: 1fr 200px;
+    }
+}
+
+@media (width < 600px){
+    header .image::before{
+        display: none;
+    }
+
+    .technologies{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    footer{
+        grid-template-columns: 1fr 150px
+}
+}
+
+
+/* Ajustar imagem dos projetos */
+@media (max-width: 600px){
+    .projects{
+        padding: 10px;
+    }
+
+    .card{
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
